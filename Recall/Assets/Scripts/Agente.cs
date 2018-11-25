@@ -222,8 +222,13 @@ public class Agente : MonoBehaviour
 
         if (VidaInimigo < 1)
         {
-            Destroy(gameObject);
+            anim.SetBool("morteInimigo", true);
         }
+    }
+
+    public void InimigoMorre()
+    {
+        Destroy(gameObject);
     }
 
 

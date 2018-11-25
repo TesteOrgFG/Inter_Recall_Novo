@@ -28,6 +28,7 @@ public class Sentinela : MonoBehaviour
 
     public int VidaSentinela;
     SpriteRenderer sprite;
+    Animator anim;
     
 
     // Use this for initialization
@@ -45,6 +46,7 @@ public class Sentinela : MonoBehaviour
         ataqueDistanciaY = 5;
 
         sprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
         VidaSentinela = 4;
 
         
@@ -63,6 +65,11 @@ public class Sentinela : MonoBehaviour
             estaPerseguindo = true;
             PerseguirHorizontal();
             PerseguirVertical();
+        }
+
+        if (Mathf.Abs(playerDistanciaX) < 1 && Mathf.Abs(playerDistanciaY) < 1)
+        {
+            anim.SetBool("SentinelaMorre", true);
         }
 
         else
@@ -153,8 +160,13 @@ public class Sentinela : MonoBehaviour
 
         if (VidaSentinela < 1)
         {
-            Destroy(gameObject);
+            anim.SetBool("SentinelaMorre", true);
         }
+    }
+
+    public void MorteSentinela()
+    {
+        Destroy(gameObject);
     }
 
 
@@ -170,7 +182,7 @@ public class Sentinela : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            Destroy(gameObject);
+            anim.SetBool("SentinelaMorre", true);
         }
     }
 }
