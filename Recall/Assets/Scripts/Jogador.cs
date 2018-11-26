@@ -15,7 +15,7 @@ public class Jogador : MonoBehaviour
     public GameObject arm; // gameobject para inserir o braço e mudar a escala dele
     public GameObject firepoint;
 
-    public float VidaJogador;
+    public int VidaJogador;
     public bool invulnerabilidade;
 
 
@@ -40,7 +40,7 @@ public class Jogador : MonoBehaviour
         estado = Estados.ANDANDO;
         lado = Lado.DIREITA;
 
-        VidaJogador = 100f;
+        VidaJogador = 4;
         spriteJogador = GetComponent<SpriteRenderer>();
     }
 
@@ -234,17 +234,13 @@ public class Jogador : MonoBehaviour
     }
 
 
-    public void DanoJogador(float danoRecebido)
+    public void DanoJogador()
     {
-        float dano = danoRecebido;
         invulnerabilidade = true;
-
-        VidaJogador -= dano;
-        BarraVida.vida -= dano;
-
+        VidaJogador--;
         StartCoroutine(Dano());
 
-        if (VidaJogador == 0)
+        if (VidaJogador < 1)
         {
             Debug.Log("Morreu");
         }
