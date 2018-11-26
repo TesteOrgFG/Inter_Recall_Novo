@@ -1,0 +1,4 @@
+﻿DOUGLAS: Onde ele está?
+NATHAN: Ele está no segundo vagão. Dê um jeito de alcança-lo!
+DOUGLAS: Temos companhia?
+NATHAN: Sim, em todos os vagões!
