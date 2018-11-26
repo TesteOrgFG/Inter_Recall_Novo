@@ -13,7 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114948999957884110}
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   EditorEvents:
   - {fileID: 114182618350673744}
   - {fileID: 114446279564222702}
@@ -25,7 +29,11 @@ MonoBehaviour:
   - {fileID: 114600610303413956}
   - {fileID: 114836007775398028}
   - {fileID: 114013917552110972}
+<<<<<<< HEAD
   MasterBankRef: {fileID: 114038602823367880}
+=======
+  MasterBankRef: {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   StringsBankRef: {fileID: 114948999957884110}
   stringsBankWriteTime: 636776978860000000
   cacheVersion: 2
@@ -64,7 +72,11 @@ MonoBehaviour:
   Path: event:/SOUND TRACK/Porta 1/Grama/Grama
   guid: e19871bc15963e4ebef853976a9290c8
   Banks:
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -91,7 +103,11 @@ MonoBehaviour:
   - Name: Desktop
     Value: 13129792
   Exists: 1
+<<<<<<< HEAD
 --- !u!114 &114038602823367880
+=======
+--- !u!114 &114049317034740336
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,7 +161,11 @@ MonoBehaviour:
   Path: event:/SFX/Doug/Foosteps/Madeira/FootstepWood
   guid: 88ca346eb645674ea676113bac1d1121
   Banks:
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -167,7 +187,11 @@ MonoBehaviour:
   Path: event:/SOUND TRACK/Porta 1/Casa/Casa
   guid: 60c8000850941b479f9672142479e915
   Banks:
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -189,7 +213,11 @@ MonoBehaviour:
   Path: event:/SFX/Doug/Gun shots/Handgun
   guid: 1ddff5c820f7a645b8cd218c78a58766
   Banks:
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -273,7 +301,11 @@ MonoBehaviour:
   Path: event:/SFX/Doug/Foosteps/Grama/FootstepGrass
   guid: ac3d232343407e42a9ccea966581195d
   Banks:
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -425,7 +457,11 @@ MonoBehaviour:
   Path: event:/SOUND TRACK/Limbo/Limbo
   guid: 369172bc06661c4b95308ee628446ae2
   Banks:
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -447,7 +483,11 @@ MonoBehaviour:
   Path: "event:/SOUND TRACK/Porta 2/Persegui\xE7\xE3o/Chase"
   guid: aafda18b01bff44d9d6429b59370eb94
   Banks:
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -572,7 +612,11 @@ MonoBehaviour:
   Path: event:/SOUND TRACK/Menu Inicial/Menu Inicial
   guid: ccf1f257a9745a49b3603f4c183be946
   Banks:
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -678,7 +722,11 @@ MonoBehaviour:
   Path: event:/SFX/Doug/Foosteps/Concreto/FootstepConcret
   guid: af4a8c86f2f1cc448534a7f3ad36624d
   Banks:
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -719,7 +767,11 @@ MonoBehaviour:
   Path: event:/SOUND TRACK/Porta 2/Bar/Bar
   guid: d1bdacd11440cb4cbd7b5d73a8d6f00a
   Banks:
+<<<<<<< HEAD
   - {fileID: 114038602823367880}
+=======
+  - {fileID: 114049317034740336}
+>>>>>>> parent of 5e1571b... Revert "cenas + artes + animações + etc"
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -891,4 +943,4 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 13129792
-  Exists: 1
+  Exists: 0

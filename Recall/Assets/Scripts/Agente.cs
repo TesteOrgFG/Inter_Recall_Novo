@@ -37,9 +37,10 @@ public class Agente : MonoBehaviour
     enum Lados { DIREITA, ESQUERDA }
     Lados lado;
 
-    public int VidaInimigo;
-
+    public static float VidaInimigo;
     SpriteRenderer sprite;
+
+    public float danoAgente;
 
     // Use this for initialization
     void Start()
@@ -56,8 +57,9 @@ public class Agente : MonoBehaviour
         duracaoIdle = 2;
         duracaoPatrulhar = 5;
         duracaoAtacar = 2.4f;
+        danoAgente = 0.25f;
 
-        VidaInimigo = 4;
+        VidaInimigo = 1f;
         sprite = GetComponent<SpriteRenderer>();
     }
 
@@ -215,12 +217,15 @@ public class Agente : MonoBehaviour
         }
     }
 
-    public void DanoAgente(int DanoBalaJogador)
+    public void DanoAgente(float DanoBalaJogador)
     {
         VidaInimigo -= DanoBalaJogador;
+        BarraVidaInimigo.vidaInimigo -= DanoBalaJogador;
+
+
         StartCoroutine(Dano());
 
-        if (VidaInimigo < 1)
+        if (VidaInimigo < 0.1f)
         {
             anim.SetBool("morteInimigo", true);
         }

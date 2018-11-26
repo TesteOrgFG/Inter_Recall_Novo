@@ -26,9 +26,11 @@ public class Sentinela : MonoBehaviour
 
     public GameObject player;
 
-    public int VidaSentinela;
+    public static float VidaSentinela;
     SpriteRenderer sprite;
     Animator anim;
+
+    public float danoSentinela;
     
 
     // Use this for initialization
@@ -47,8 +49,9 @@ public class Sentinela : MonoBehaviour
 
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        VidaSentinela = 4;
+        VidaSentinela = 1f;
 
+        danoSentinela = 0.25f;
         
     }
 
@@ -153,12 +156,12 @@ public class Sentinela : MonoBehaviour
     }
 
 
-    public void DanoSentinela(int DanoBalaJogador)
+    public void DanoSentinela(float DanoBalaJogador)
     {
         VidaSentinela -= DanoBalaJogador;
         StartCoroutine(DanoSentinela());
 
-        if (VidaSentinela < 1)
+        if (VidaSentinela < 0.1f)
         {
             anim.SetBool("SentinelaMorre", true);
         }
@@ -183,6 +186,7 @@ public class Sentinela : MonoBehaviour
         if(collision.tag == "Player")
         {
             anim.SetBool("SentinelaMorre", true);
+            
         }
     }
 }

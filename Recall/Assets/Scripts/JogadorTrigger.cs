@@ -5,12 +5,16 @@ using UnityEngine;
 public class JogadorTrigger : MonoBehaviour {
 
     private Jogador jogador;
+    private Agente agente;
+    private Sentinela sentinela;
 
     // Use this for initialization
 
     private void Awake()
     {
         jogador = GameObject.Find("Player").GetComponent<Jogador>();
+        agente = GameObject.Find("Inimigo").GetComponent<Agente>();
+        sentinela = GameObject.Find("Sentinela").GetComponent<Sentinela>();
     }
     void Start () {
 		
@@ -28,7 +32,7 @@ public class JogadorTrigger : MonoBehaviour {
         {
             if (!jogador.invulnerabilidade)
             {
-                jogador.DanoJogador();
+                jogador.DanoJogador(agente.danoAgente);
                
             }
         }
@@ -37,8 +41,7 @@ public class JogadorTrigger : MonoBehaviour {
         {
             if (!jogador.invulnerabilidade)
             {
-                jogador.DanoJogador();
-
+                jogador.DanoJogador(sentinela.danoSentinela);
             }
         }
     }
