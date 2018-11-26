@@ -1,20 +1,21 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interage : MonoBehaviour {
+public class InteragirChloe : MonoBehaviour {
 
-    private bool entrou;
-    public bool dialogoSophia;
+    public GameObject npc;
+    public bool entrouChloe;
+    public bool Dialogo;
 
     void Update()
     {
-        if (entrou == true)
+        if (entrouChloe == true)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                dialogoSophia = true;
-                print("Diálogo Sophia ");
+                Dialogo = true;
+                print(Dialogo);
             }
         }
     }
@@ -24,7 +25,7 @@ public class Interage : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             print("Entrou");
-            entrou = true;
+            entrouChloe = true;
         }
     }
 
@@ -38,7 +39,8 @@ public class Interage : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             print("saiu");
-            entrou = false;
+            entrouChloe = false;
+            Dialogo = false;
         }
     }
 }

@@ -1,0 +1,9 @@
+﻿NATHAN: Escute com atenção Doug!
+NATHAN: Seu alvo é Bob Owen, um agente da organização da segurança nacional RED.
+NATHAN: Ele se infiltrou em nossas instalações e roubou documentos ultra secretos.
+NATHAN: Você deve neutralizá-lo e recuperar esses documentos!
+DOUGLAS: Entendido.
+NATHAN: Ele está na outra ponta do balcão a direita.
+DOUGLAS: Entendido Chefe.
+NATHAN: E fique atento! É possível que ele não esteja sozinho.
+NATHAN: Então tome cuidado ao se aproximar.

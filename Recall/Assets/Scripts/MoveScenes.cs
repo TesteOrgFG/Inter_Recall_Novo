@@ -14,10 +14,7 @@ public class MoveScenes : MonoBehaviour
     {
         if (entrou == true)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                SceneManager.LoadScene(newLevel);
-            }
+            SceneManager.LoadScene(newLevel);
         }
     }
 
