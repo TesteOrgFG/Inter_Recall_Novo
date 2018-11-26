@@ -4,7 +4,7 @@ public class Weapon : MonoBehaviour
 {
 
     public float fireRate = 0;
-    public int Damage = 10;
+    public float Damage;
     public LayerMask whatToHit;
 
     public Transform BulletTrailPrefab;
@@ -19,6 +19,8 @@ public class Weapon : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+
+        Damage = 0.25f;
         firePoint = transform.Find("FirePoint");
 
         if (firePoint == null)
